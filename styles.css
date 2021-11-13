@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #64B5F6;
+
+}
+
+#container {
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.land {
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.land form {
+  flex-direction: column;
+  align-items: center;
+}
+
+#prompt {
+  font-family: 'Noto Sans Display', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-right: 20px;
+}
+
+.land #prompt {
+  margin-bottom: 15px;
+}
+
+#weatherInput {
+  width: 50%;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  font-size: 1.2em;
+  font-family: 'Noto Sans Display', sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.land #weatherInput {
+  width: 60%;
+  border-radius: 25px;
+}
+
+#weatherInput:focus {
+  outline: none;
+}
+
+#weatherSubmit {
+  border-radius: 0 25px 25px 0;
+  border: none;
+  padding: 10px 20px;
+  background-color: #FF8A80;
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.land #weatherSubmit {
+  border-radius: 25px;
+}
+
+#weatherSubmit:hover {
+  background-color: #FF5252;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#weatherResults {
+  margin: 30px 0 0 0;
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+#weatherResults img {
+  margin: 20px 0;
+}
+
+.land #weatherResults {
+  display: none;
+}
+
+#forecastResults {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#forecastResults::-webkit-scrollbar {
+    display: none;
+}
+
+.land #forecastResults {
+  display: none;
+}
+
+.hour {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 500;
+}
+
+.hour img {
+  margin: 20px 0;
+}
+
+.day {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.dup {
+  color: #64B5F6;
+}
+
+.temp {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.forecast {
+  padding: 30px 20px;
+  margin-right: 20px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
