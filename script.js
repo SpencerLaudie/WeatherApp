@@ -1,4 +1,4 @@
-const APIKEY = "005011f83aefc4124408a175063fc043"
+const APIKEY = /* REDACTED FOR SECURITY */
 
 document.getElementById("weatherSubmit").addEventListener("click", function(event) {
   event.preventDefault();
